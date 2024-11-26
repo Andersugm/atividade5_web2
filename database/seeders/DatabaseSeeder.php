@@ -12,8 +12,9 @@ class DatabaseSeeder extends Seeder
     {
         FakerFactory::create()->unique(true);
         $this->call([
-            AuthorPublisherBookSeeder::class,
             CategorySeeder::class,
+            AuthorPublisherBookSeeder::class,
+            UserBorrowingSeeder::class, 
         ]);
     }
 }
